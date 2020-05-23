@@ -1,0 +1,46 @@
+# Setup
+title: Santosh Golecha
+tagline: Welcome to my weblog
+url: https://sgolecha.github.io/blog
+paginate: 1
+baseurl: ""
+permalink: pretty
+
+# Gems
+plugins:
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+
+pages_list:
+  Archive: '/archive'
+  About: '/about'
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# ga_analytics: UA-000000-0
+
+# Specify the author for blog posts
+author:
+  name: Santosh Golecha
+  #url: https://twitter.com/mdo
+  #email: markdotto@gmail.com
+
+# Custom vars
+version: 3.0.0
