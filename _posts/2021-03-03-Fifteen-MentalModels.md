@@ -62,8 +62,8 @@ Recently, I started digging into mental models and how they can help in making b
   - Someone who approaches a problem with a ridiculously large number of assumptions.
 
 - Walt Disney’s Rule:
-  - If struggling to think clearly about a subject, draw it out. Here’s Walt Disney’s drawing he made in 1957 of the Media Empire he wanted to build. It’s iconic 55.
+  - If struggling to think clearly about a subject, draw it out. Here’s Walt Disney’s drawing he made in 1957 of the [Media Empire](https://i.redd.it/qaflf41l7ga61.jpg) he wanted to build.
 
 - Schwarzeneggers’ Rule:
-  - Never need to monetize your artistic pursuits. You won’t have to sacrifice your inner joy and vision for a payday.
+  - Never have need to monetize your artistic pursuits. You won’t have to sacrifice your inner joy and vision for a payday.
   - Arnold made millions from property and D2C bodybuilding guides so he never had to say yes to acting gigs he didn’t like.
