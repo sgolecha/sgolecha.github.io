@@ -31,6 +31,7 @@ layout: default
 {% endif %}
 
 <!-- comment form below the comments display -->
+{% if page.comments != false %}
 <section id="comment-form">
   <h2>Leave a comment</h2>
   <form method="POST" action="https://staticman-git-master-santosh-golechas-projects.vercel.app/v3/entry/github/{{ site.repository }}/{{ site.staticman.branch }}/comments">
@@ -57,8 +58,6 @@ layout: default
     <button type="submit">Submit Comment</button>
   </form>
 </section>
-
-
 {% endif %}
 <!--
 {% if site.related_posts != empty %}
