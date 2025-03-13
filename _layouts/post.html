@@ -54,6 +54,35 @@ layout: default
     <button type="submit">Submit Comment</button>
   </form>
 </section>
+
+<section id="comment-form">
+  <h2>Leave a comment</h2>
+  <form method="POST" action="https://staticman-git-master-santosh-golechas-projects.vercel.app/v3/entry/github/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+    <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    
+    <div class="comment-form-grid">
+      <div>
+        <label for="comment-form-name">Name</label>
+        <input id="comment-form-name" name="fields[name]" type="text" required>
+      </div>
+      
+      <div>
+        <label for="comment-form-email">Email (optional, will be hashed)</label>
+        <input id="comment-form-email" name="fields[email]" type="email">
+      </div>
+      
+      <div class="comment-full-width">
+        <label for="comment-form-message">Comment</label>
+        <textarea id="comment-form-message" name="fields[message]" required rows="6"></textarea>
+      </div>
+    </div>
+    
+    <button type="submit">Submit Comment</button>
+  </form>
+</section>
+
+
 {% endif %}
 <!--
 {% if site.related_posts != empty %}

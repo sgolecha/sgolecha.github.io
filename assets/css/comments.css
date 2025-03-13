@@ -1,0 +1,63 @@
+/* Comment form styling */
+#comment-form {
+  max-width: 800px;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#comment-form h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.comment-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+#comment-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+#comment-form input[type="text"],
+#comment-form input[type="email"],
+#comment-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#comment-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+#comment-form button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#comment-form button:hover {
+  background-color: #0069d9;
+}
+
+/* Full-width for message field */
+.comment-full-width {
+  grid-column: 1 / -1;
+}
