@@ -15,6 +15,9 @@ title: Home
     <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
     {{ post.content }}
+    <p class="post-comments-link">
+      <a href="{{ post.url | relative_url }}#comments">View Comments</a>
+    </p>
   </article>
   {% endfor %}
 </div>
