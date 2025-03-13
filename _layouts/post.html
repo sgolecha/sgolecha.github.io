@@ -31,30 +31,6 @@ layout: default
 {% endif %}
 
 <!-- comment form below the comments display -->
-{% if page.comments != false %}
-<section id="comment-form">
-  <h2>Leave a comment</h2>
-  <form method="POST" action="https://staticman-git-master-santosh-golechas-projects.vercel.app/v3/entry/github/{{ site.repository }}/{{ site.staticman.branch }}/comments">
-    <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
-    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-    <input name="fields[reply_to]" type="hidden" value="{% raw %}{{ comment_id }}{% endraw %}">
-
-    <label for="comment-form-name">Name</label>
-    <input id="comment-form-name" name="fields[name]" type="text" required>
-
-    <label for="comment-form-email">Email (optional, will be hashed)</label>
-    <input id="comment-form-email" name="fields[email]" type="email">
-
-    <label for="comment-form-url">Website (optional)</label>
-    <input id="comment-form-url" name="fields[url]" type="url">
-
-    <label for="comment-form-message">Comment</label>
-    <textarea id="comment-form-message" name="fields[message]" required rows="6"></textarea>
-
-    <button type="submit">Submit Comment</button>
-  </form>
-</section>
-
 <section id="comment-form">
   <h2>Leave a comment</h2>
   <form method="POST" action="https://staticman-git-master-santosh-golechas-projects.vercel.app/v3/entry/github/{{ site.repository }}/{{ site.staticman.branch }}/comments">
