@@ -2,6 +2,7 @@
 layout: post
 title: What makes neural nets special?
 categories: machinelearning
+comments: true
 ---
 
 While we are awed by the power of LLMs and all the exciting possibilities they bring, it's worth taking a step back to ask: what actually powers these LLMs, and what makes them special? We know that neural networks (Artificial Neural Networks or ANNs, to be precise) are behind the LLM prowess, but what makes ANNs so powerful? Machine Learning practitioners would already know this, but the secret sauce is the _Universal Approximation Theorem_.
