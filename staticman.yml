@@ -1,12 +1,12 @@
 comments:
   # Names of the fields the form is allowed to submit
-  allowedFields: ["name", "email", "url", "message"]
+  allowedFields: ["name", "email", "message"]
   # Names of required fields
   requiredFields: ["name", "message"]
   # Type of entries
   allowedTypes: ['normal', 'reply']
   # Form submission branch, defaults to master/main
-  branch: "main"
+  branch: "master"
   # Destination path (filename) for the data files
   filename: "entry{@timestamp}"
   # Format of the generated data files
@@ -20,7 +20,6 @@ comments:
     enabled: true
     author: "name"
     authorEmail: "email"
-    authorUrl: "url"
     content: "message"
   # Transform the submitted data
   transforms:
