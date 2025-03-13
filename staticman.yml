@@ -1,0 +1,36 @@
+comments:
+  # Names of the fields the form is allowed to submit
+  allowedFields: ["name", "email", "url", "message"]
+  
+  # Names of required fields
+  requiredFields: ["name", "message"]
+  
+  # Type of entries
+  allowedTypes: ['normal', 'reply']
+  
+  # Form submission branch, defaults to master/main
+  branch: "main"
+  
+  # Destination path (filename) for the data files
+  filename: "entry{@timestamp}"
+  
+  # Format of the generated data files
+  format: "yaml"
+  
+  # Directory to which the form data will be saved
+  path: "_data/comments/{options.slug}"
+  
+  # Whether entries need to be approved before they are published
+  moderation: true
+  
+  # Akismet spam detection
+  akismet:
+    enabled: true
+    author: "name"
+    authorEmail: "email"
+    authorUrl: "url"
+    content: "message"
+    
+  # Transform the submitted data
+  transforms:
+    email: md5
