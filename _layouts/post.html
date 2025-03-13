@@ -12,7 +12,6 @@ layout: default
 <div id="comments">
   <h3>Comments</h3>
   {% assign comments = site.data.comments[page.slug] | sort %}
-  
   {% for comment in comments %}
     {% assign commentData = comment[1] %}
     <article id="comment-{% raw %}{{ forloop.index }}{% endraw %}">
@@ -71,4 +70,5 @@ layout: default
     {% endfor %}
   </ul>
 </aside>
+{% endif %}
 -->
