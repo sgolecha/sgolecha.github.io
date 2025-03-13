@@ -34,7 +34,7 @@ layout: default
 {% if page.comments != false %}
 <section id="comment-form">
   <h2>Leave a comment</h2>
-  <form method="POST" action="https://staticman-git-master-santosh-golechas-projects.vercel.app/v3/entry/github/{{ site.repository }}/{{ site.staticman.branch }}/comments">
+  <form method="POST" action="https://staticman-git-master-santosh-golechas-projects.vercel.app/v3/entry/github/{{ site.staticman.repository }}/{{ site.staticman.branch }}/comments">
     <input name="options[redirect]" type="hidden" value="{{ site.url }}{{ page.url }}">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
     
