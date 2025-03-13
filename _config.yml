@@ -44,9 +44,3 @@ author:
 
 # Custom vars
 version: 3.0.0
-
-# Staticman comments
-staticman:
-  branch: master   # Branch where the site is hosted
-  repository: sgolecha/sgolecha.github.io   # GitHub username/repo-name
-  endpoint: https://staticman-git-master-santosh-golechas-projects.vercel.app/ 
